@@ -1,29 +1,30 @@
-# import csv
-
-# with open("weather_data.csv") as data_file:
-#     data = csv.reader(data_file)
-#     temperatures = []
-#     for row in data:
-#         if row[1] != "temp":
-#             temperatures.append(int(row[1]))
-#         #print(row)
-
-
-
-# print(temperatures)
+import turtle
 import pandas
-data = pandas.read_csv("weather_data.csv")
-print(data["temp"])
 
-data_dict = data.to_dict()
-temp_list = data["temp"].to_list()
-print(temp_list)
+screen = turtle.Screen()
+screen.title("U.S. States Game")
+image = "blank_states_img.gif"
+screen.addshape(image)
+turtle.shape(image)
+
+data = pandas.read_csv("50_states.csv")
+all_states = data.state.to_list()
 
 
+#game is on if not 50/50
 
-# temp_avr = sum(temp_list)/ len(temp_list)
-#
-temp_avr = data["temp"].mean()
-print(temp_avr)
-temp_max = data["temp"].max()
-print(temp_max)
+answer_state = screen.textinput("US State Game", "What's a state you rem?")
+if answer_state in all_states:
+        t = turtle.Turtle()
+        t.hideturtle()
+        t.penup()
+        state_data = data[data.state == answer_state]
+        t.goto(int(state_data.x), int(state_data.y))
+        t.write(state_data.state)
+
+       
+        
+        
+
+
+turtle.mainloop()
