@@ -1,4 +1,4 @@
-import turtle
+berimport turtle
 import pandas
 
 screen = turtle.Screen()
@@ -14,7 +14,7 @@ guessed_state = []
 
 #game is on if not 50/50
 while len(guessed_state) < 50:
-        answer_state = screen.textinput(f"{len(guessed_state)}/50 States Correct", "What's a state you rem?").title()
+        answer_state = screen.textinput(f"{len(guessed_state)}/50 States Correct", "What's a state you remember?").title()
         if answer_state == "Exit":
                 states_to_learn = []
                 for state in all_states:
