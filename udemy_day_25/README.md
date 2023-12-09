@@ -1,6 +1,11 @@
-Can you name the US states? - quiz using turtle and csv data
+# Can you name the US states? - quiz using turtle and csv data
 
+[a link](https://www.sporcle.com/games/g/states)
 
-https://www.sporcle.com/games/g/states
+## Description:
+* Every time you type corect name of a state the state wil be label on map and you will score 1 point.
+* Score is recorded and will show you your current result. 
+* When you will not know any other state -> type "exit" and program will be closed.
+* Additionally program will save in csv state that you missed - as a note for you to learn more and come back to game!
 
-Every time you type crrect the name of a state  the state wil be label on map and you will score 1 point. 
+![Screenshot](us_state.png)
