@@ -11,4 +11,6 @@ Using NATO phonetic alphabet program convert provided word to code that correspo
 
 ### Example:
 > Enter a word: Phoebe
+
+### Output:
 > ['Papa', 'Hotel', 'Oscar', 'Echo', 'Bravo', 'Echo']
