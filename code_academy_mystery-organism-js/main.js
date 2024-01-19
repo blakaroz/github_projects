@@ -92,3 +92,10 @@ while (pAequor30.length < 30) {
 console.log(pAequor30)
 
 
+
+const x = 23
+
+
+
+
+
